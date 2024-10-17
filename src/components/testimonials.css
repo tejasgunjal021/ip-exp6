@@ -1,0 +1,68 @@
+.testimonials {
+    margin: 80px auto;
+    padding: 0 80px;
+    position: relative;
+    overflow: hidden; /* Prevent overflow from the slider */
+}
+
+.next-btn, .back-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px; /* Adjust padding as necessary */
+    width: 50px; /* Adjust width as necessary */
+    height: 50px; /* Set a height to make it circular */
+    border-radius: 50%;
+    cursor: pointer;
+    background: #212EA0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for aesthetics */
+}
+
+.back-btn {
+    left: 10px; /* Position the back button on the left */
+}
+
+.next-btn {
+    right: 10px; /* Position the next button on the right */
+}
+
+.slider {
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.slider ul {
+    display: flex; /* Use flexbox for horizontal layout */
+    transition: 0.5s; /* Smooth transition */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.slider li {
+    list-style-type: none; /* Remove bullet points */
+    flex: 0 0 50%; /* Each slide takes up half the width */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    padding: 20px; /* Add some padding inside each slide */
+}
+
+.slide {
+    border-radius: 10px; 
+    height: auto; /* Set a fixed height for consistency */
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    padding:40px;
+    color:#676767;
+    line-height: 1.4;
+
+}
+
+.slide img{
+    width:65px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border:4px solid #212EA0;
+}
+.user-img {
+    width: 50px; /* Set a fixed width for user images */
+    height: 55px; /* Set a fixed height for user images */
+    border-radius: 50%; /* Make user images circular */
+    margin-right: 10px; /* Space between image and text */
+}
